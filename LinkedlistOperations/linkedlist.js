@@ -71,7 +71,7 @@ class LinkedList {
     }
 
     let temp = this.head;
-    this.head = this.head.next;
+    this.head = temp.next;
     temp = null;
   }
   removePosition(index) {
@@ -80,7 +80,7 @@ class LinkedList {
       curr = curr.next;
     }
     var temp = curr.next;
-    curr.next = curr.next.next;
+    curr.next = temp.next;
     temp = null;
   }
   reverse() {
