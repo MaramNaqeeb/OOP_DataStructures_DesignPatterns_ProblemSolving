@@ -22,7 +22,7 @@ var removeNthFromEnd = function (head, n) {
   }
 
   if (right == null) {
-    // in case that n is greater than the linkedlist which gets the right pointer pointing to null
+    // in case that n is greater than the linkedlist, which gets the right pointer pointing to null
     return head.next;
   }
   while (right.next) {
