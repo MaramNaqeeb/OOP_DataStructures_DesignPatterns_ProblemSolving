@@ -30,7 +30,7 @@ var removeNthFromEnd = function (head, n) {
     left = left.next; // move it forward till it points to the node previous to the node that should be removed
   }
   let temp = left.next; // I use temp to remove the node completely from memory
-  left.next = left.next.next; // the left pointer points to the next of its next node to remove its next node
+  left.next = temp.next; // the left pointer points to the next of its next node to remove its next node
   temp = null;
 
   return head;
