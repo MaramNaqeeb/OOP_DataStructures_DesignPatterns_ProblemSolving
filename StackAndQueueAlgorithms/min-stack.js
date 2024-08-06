@@ -12,7 +12,7 @@ var stackNode = function (value, min) {
  * @return {void}
  */
 MinStack.prototype.push = function (val) {
-  let newNode = new stackNode(val, val); // the min node is head as there is no other nodes
+  let newNode = new stackNode(val, val); // the min node is the head as there is no other nodes
   if (!this.head) {
     this.head = newNode;
   } else {
