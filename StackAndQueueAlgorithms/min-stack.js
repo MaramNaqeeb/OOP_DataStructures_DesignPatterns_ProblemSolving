@@ -1,7 +1,7 @@
 var MinStack = function () {
   this.head = null;
 };
-var stackNode = function (value, minimum) {   // I added this function to create a node as I am using linked list not array 
+var stackNode = function (value, minimum) {   // I added this function to create a node as I am using a linked list not an array 
   this.value = value;
   this.next = null;
   this.minimum = minimum;
