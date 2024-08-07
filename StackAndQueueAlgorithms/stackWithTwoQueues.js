@@ -39,6 +39,7 @@ MyStack.prototype.empty = function () {
   return this.queue.length == 0;
 };
 
+
 /**
  * Your MyStack object will be instantiated and called as such:
  * var obj = new MyStack()
