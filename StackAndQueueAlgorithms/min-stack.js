@@ -1,10 +1,10 @@
 var MinStack = function () {
   this.head = null;
 };
-var stackNode = function (value, min) {
+var stackNode = function (value, minimum) {   // I added this function to create a node as I am using linked list not array 
   this.value = value;
   this.next = null;
-  this.min = min;
+  this.minimum = minimum;
 };
 
 /**
@@ -12,11 +12,13 @@ var stackNode = function (value, min) {
  * @return {void}
  */
 MinStack.prototype.push = function (val) {
-  let newNode = new stackNode(val, val); // the min node is the head as there is no other nodes
+  let newNode = new stackNode(val, val); // the minimum node is the head as there is no other nodes
   if (!this.head) {
     this.head = newNode;
   } else {
-    newNode = new stackNode(val, Math.min(val, this.head.min)); // the min node is created at the top of the stack
+    newNode = new stackNode(val, Math.min(val, this.head.minimum)); /** when a new node is created, the new node will
+                                                                     store its value and the minimum value 
+                                                                     up to the top of the stack to compare between them.**/
     newNode.next = this.head;
     this.head = newNode;
   }
@@ -27,7 +29,7 @@ MinStack.prototype.push = function (val) {
  */
 MinStack.prototype.pop = function () {
   if (!this.head) {
-    console.log("list is already empty");
+    console.log("The stack is empty");
     return;
   }
 
@@ -51,9 +53,9 @@ MinStack.prototype.top = function () {
  */
 MinStack.prototype.getMin = function () {
   if (!this.head) {
-    console.log("Stack is empty");
+    console.log("The stack is empty");
   }
-  return this.head.min;
+  return this.head.minimum;
 };
 
 /**
