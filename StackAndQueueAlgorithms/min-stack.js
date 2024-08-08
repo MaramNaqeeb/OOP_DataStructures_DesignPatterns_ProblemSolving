@@ -12,9 +12,9 @@ var stackNode = function (value, minimum) {   // I added this function to create
  * @return {void}
  */
 MinStack.prototype.push = function (val) {
-  let newNode = new stackNode(val, val); // the minimum node is the head as there is no other nodes
+  let newNode = new stackNode(val, val); 
   if (!this.head) {
-    this.head = newNode;
+    this.head = newNode;  // the minimum node is the head as there is no other nodes
   } else {
     newNode = new stackNode(val, Math.min(val, this.head.minimum)); /** when a new node is created, the new node will
                                                                      store its value and the minimum value 
