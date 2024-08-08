@@ -34,7 +34,7 @@ MinStack.prototype.pop = function () {
   }
 
   let temp = this.head; // I store the head in a temp to remove the node completely from the memory
-  this.head = this.head.next;
+  this.head = temp.next;
   temp = null;
 };
 
