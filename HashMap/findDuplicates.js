@@ -2,8 +2,7 @@ function findDuplicates(arr) {
   let dic = {};
   let arr2 = [];
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i] in dic) {
-      // or dic[arr[i]]
+    if (arr[i] in dic) {   //or if(dic[arr[i]])
       dic[arr[i]]++;
     } else {
       dic[arr[i]] = 1;
