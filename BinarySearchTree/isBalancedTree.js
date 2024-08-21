@@ -18,3 +18,6 @@ var isBalanced = function (root) {
   // here I call the function recursively
   return isBalanced(root.left) && isBalanced(root.right);
 };
+
+
+
