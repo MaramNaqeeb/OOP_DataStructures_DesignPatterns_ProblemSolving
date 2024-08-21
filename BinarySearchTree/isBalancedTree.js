@@ -2,7 +2,7 @@ var Height = function (node) {
   if (node === null) {
     return 0;
   }
-  // here I calculate the height of the left and right nodes and add 1 for the current node to get the total height
+  // here I calculate the maximum height of the left and right nodes and add 1 for the current node to get the total height
   return Math.max(Height(node.left), Height(node.right)) + 1; 
 };
 
