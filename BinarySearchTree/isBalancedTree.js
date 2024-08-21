@@ -15,7 +15,7 @@ var isBalanced = function (root) {
   if (Math.abs(Height(root.left) - Height(root.right)) > 1) {
     return false;
   }
-  // here I call the function recursively
+  // here I call the function recursively to traverse the tree
   return isBalanced(root.left) && isBalanced(root.right);
 };
 
