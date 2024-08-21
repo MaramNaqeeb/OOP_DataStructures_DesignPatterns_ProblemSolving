@@ -30,7 +30,7 @@ var isBalanced = function (root) {
   }
 
   while (stack2.length) {
-    // here I pop from stack2 to check each node's height and then apply the balance rule to check if the tree is balanced or not
+    // when stack2 becomes empty, I stop iterating through the stack
     let curr = stack2.pop();
 
     let rightHeight = 0;
