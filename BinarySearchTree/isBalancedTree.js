@@ -22,9 +22,11 @@ var isBalanced = function (root) {
 
     stack2.push(curr);
 
-    if (curr.left) stack1.push(curr.left);
+    if (curr.left) 
+      stack1.push(curr.left);
 
-    if (curr.right) stack1.push(curr.right);
+    if (curr.right) 
+      stack1.push(curr.right);
   }
 
   while (stack2.length) {
@@ -34,12 +36,13 @@ var isBalanced = function (root) {
     let rightHeight = 0;
     let leftHeight = 0;
 
-    if (curr.left) leftHeight = Height(curr.left);
+    if (curr.left) 
+      leftHeight = Height(curr.left);
 
-    if (curr.right) rightHeight = Height(curr.right);
-
-    if (Math.abs(leftHeight - rightHeight) > 1)
-      // here I apply the balance rule to compare between the leftHeight and the rightHeight
+    if (curr.right)
+       rightHeight = Height(curr.right);
+    // here I apply the balance rule to compare between the leftHeight and the rightHeight
+    if (Math.abs(leftHeight - rightHeight) > 1) 
       return false;
   }
   // if the leftHeight-rightHeight <= 1; it returns true
