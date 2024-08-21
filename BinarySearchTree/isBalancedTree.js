@@ -15,7 +15,7 @@ var isBalanced = function (root) {
   let stack1 = []; // to reverse the tree by popping the tree from stack1 and pushing it to stack2
   let stack2 = []; // to traverse the tree from the bottom as it has the reversed tree popped from stack1
 
-  stack1.push(root); // I instantiate the tree by pushing the root node to stack1
+  stack1.push(root); // I initialize stack1 by pushing the root node to it
 
   while (stack1.length) {
     let curr = stack1.pop();
