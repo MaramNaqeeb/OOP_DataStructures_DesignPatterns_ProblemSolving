@@ -11,7 +11,7 @@ var isBalanced = function (root) {
     return true; // if there is no nodes in the tree, it returns true
   }
 
-  // here I make an inOrder traversal for the tree and use two stacks to push to and pop from them
+  // here I make an inOrder traversal for the tree (DFS) and use two stacks to push to and pop from them
 
   let stack1 = []; // to reverse the tree by popping the tree from stack1 and pushing it to stack2
   let stack2 = []; // to traverse the tree from the bottom as it has the reversed tree popped from stack1
