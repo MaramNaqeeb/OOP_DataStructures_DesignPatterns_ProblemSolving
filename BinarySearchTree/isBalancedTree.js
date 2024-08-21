@@ -2,7 +2,7 @@ var Height = function (node) {
   if (node === null) {
     return 0;
   }
-  return Math.max(Height(node.left), Height(node.right)) + 1; // here I get the height of the left and right nodes and add 1 to add the parent node for the left and right nodes
+  return Math.max(Height(node.left), Height(node.right)) + 1; // here I get the height of the left and right nodes and add 1 for the current node to get the total height
 };
 
 var isBalanced = function (root) {
