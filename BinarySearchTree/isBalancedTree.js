@@ -30,7 +30,7 @@ var isBalanced = function (root) {
   }
 
   while (stack2.length) {
-    // when stack2 becomes empty, I stop iterating through the stack
+    // when stack2 becomes empty, I finish iterating through the tree
     let curr = stack2.pop();
 
     let rightHeight = 0;
