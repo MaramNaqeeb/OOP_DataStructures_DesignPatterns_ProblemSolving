@@ -32,8 +32,8 @@ var sortedListToBST = function (head) {
   
     let mid = Math.floor((left + right) / 2); // I calculate the mid of the array
     let root = new TreeNode(arr[mid]); // here I create the BST root which is the mid element of the array
-    root.left = convert(arr, left, mid - 1); // the left side of the array becomes the left side of the tree
-    root.right = convert(arr, mid + 1, right); // the right side of the array becomes the right side of the tree
+    root.left = convert(arr, left, mid - 1); // the left side of the array (the side before the middle element) becomes the left side of the tree
+    root.right = convert(arr, mid + 1, right); // the right side of the array (the side after the middle element) becomes the right side of the tree
     return root;
   };
   
