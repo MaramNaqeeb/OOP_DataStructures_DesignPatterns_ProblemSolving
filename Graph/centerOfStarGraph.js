@@ -3,7 +3,7 @@
  * @return {number}
  */
 var findCenter = function (edges) {
-    // here I compare the first element of the first array (first vertex) with the other arrays
+    // here I compare the first element of the first array (first vertex) with the other arrays (vertices)
     if (edges[0][0] == edges[1][0] || edges[0][0] == edges[1][1]) {
         // I return the first element of the first array if the condition is met
         return edges[0][0]
