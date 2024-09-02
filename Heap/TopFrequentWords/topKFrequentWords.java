@@ -18,7 +18,7 @@ class Solution {
     PriorityQueue<String> minheap = new PriorityQueue<>((a, b) ->
       /* 'a' and 'b' are strings in the PriorityQueue
 
-      if the frequency of 'a' and 'b' are different, 
+      if the frequency of 'a' and 'b' is different, 
       I subtract the frequency of 'a' from the frequency of 'b' 
       to get the difference between their frequencies to get them in descending order
 
