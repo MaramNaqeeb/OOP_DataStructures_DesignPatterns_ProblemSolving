@@ -1,0 +1,11 @@
+Create a hashmap to count the frequency of strings.
+Traverse the given array in a for loop.
+If the word does not exist in the hashmap, set its frequency to 1, else increment its frequencyb by 1.
+Create a min heap using a priority queue to track the top K frequent words.
+The queue priority has two parameters 'a' and 'b'.
+If the frequency of 'a' and 'b' are different, subtract the frequency of 'a' from the frequency of 'b' to get them in descending order.
+If the frequency of 'a' and 'b' is the same, use the built in function compareTo() to order the strings alphabetically.
+Traverse the keys of the map and add each word to the minheap.
+Traverse the minheap starting from 0 index to k.
+Extract the top frequent words from the minheap and add them to the result.
+Return the result that contains the top frequent words extracted from the minheap.
