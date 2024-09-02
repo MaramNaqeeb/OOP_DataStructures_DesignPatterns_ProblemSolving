@@ -1,6 +1,6 @@
 Create a hashmap to count the frequency of strings.
 Traverse the given array in a for loop.
-If the word does not exist in the hashmap, set its frequency to 1, else increment its frequencyb by 1.
+If the word does not exist in the hashmap, set its frequency to 1, else increment its frequency by 1.
 Create a min heap using a priority queue to track the top K frequent words.
 The queue priority has two parameters 'a' and 'b'.
 If the frequency of 'a' and 'b' are different, subtract the frequency of 'a' from the frequency of 'b' to get them in descending order.
